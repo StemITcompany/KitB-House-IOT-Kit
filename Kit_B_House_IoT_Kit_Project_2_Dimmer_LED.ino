@@ -1,5 +1,5 @@
-const int ledPin = 3;
-const int analogPin = A0;
+int ledPin = 3;
+int analogPin = A0;
 int analogValue = 0;
 
 void setup() {
