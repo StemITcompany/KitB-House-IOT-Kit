@@ -14,7 +14,6 @@ void setup() {
   // Start with the fan off
   analogWrite(MOTOR_ENA, 0);
   
-  Serial.begin(9600); // Initialize serial communication for debugging
 }
 
 void loop() {
@@ -43,11 +42,7 @@ void loop() {
   // Set fan speed
   analogWrite(MOTOR_ENA, fanSpeed);
 
-  // Log distance and fan speed to the serial monitor
-  Serial.print("Distance: ");
-  Serial.print(distance);
-  Serial.print(" cm\tFan Speed: ");
-  Serial.println(fanSpeed);
+
 
   // Add delay to control the update rate
   delay(100); // You can adjust the delay as needed
